@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+        <title>Cadastro</title>
+    </head>
+
+    <body>  
+        <div>
+            <h1 id="titulo">Formulário - Galeria de Fotos</h1>
+            <p id="subtitulo">Complete as informações</p>
+            <br>
+        </div>
+
+        <!-- Início do formulário -->
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="nome"><strong>Nome</strong></label>
+                    <input type="text" name="nome" id="nome" required>
+                </div>
+                <div class="campo">
+                    <label for="sobrenome"><strong>Sobrenome</strong></label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+                </div>
+            </fieldset> 
+            <div class="campo">
+                <label for="email"><strong>Email</strong></label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="campo">
+                <label><strong>Existe alguma foto sua presente na galeria?</strong></label>
+                <label>
+                    <input type="radio" name="devweb" value="sim" checked>Sim
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="nao">Não
+                </label>
+            </div>
+            <div class="campo">
+                <label for="pergunta"><strong>Você deseja manter ou retirar a sua foto?</strong></label>
+                <select id="pergunta" required>
+                  <option selected disabled value="">Selecionar</option>
+                  <option>Manter</option>
+                  <option>Retirar</option>
+                </select>
+            </div>
+
+            <fieldset class="grupo">
+                <div id="check">
+                    <label><strong>Caso queira remover, qual seria o motivo?:</strong></label><br><br>
+                    <input type="checkbox" id="motivo1" name="motivo1" value="motivo1">
+                    <label for="motivo1"> motivo 1</label>
+                    <input type="checkbox" id="motivo2" name="motivo2" value="motivo2">
+                    <label for="motivo2"> motivo 2</label>
+                    <input type="checkbox" id="motivo3" name="motivo3" value="motivo3">
+                    <label for="motivo3"> motivo 3</label>
+                    <input type="checkbox" id="motivo4" name="motivo4" value="motivo4">
+                    <label for="motivo4"> motivo 4</label>
+                    <input type="checkbox" id="motivo5" name="motivo5" value="motivo5">
+                    <label for="tmotivo5"> motivo 5</label>
+                    <input type="checkbox" id="motivo6" name="motivo6" value="motivo6">
+                    <label for="motivo6"> motivo 6</label>
+                    <input type="checkbox" id="motivo7" name="motivo7" value="motivo7">
+                    <label for="motivo7"> motivo 7</label>
+                </div>
+            </fieldset>
+            <div class="campo">
+                <br>
+                <label for="outro"><strong>Outro, descreva para nós: </strong></label>
+                <textarea rows="6" style="width: 26em" id="outro" name="outro"></textarea>
+            </div>
+            <button class="botao" type="submit" onsubmit="">Enviar</button>            
+
+        </form>
+
+    </body>
+
+</html>
+
+
+
+
